@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    background-color: #22222f;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.btns {
+    width: 100%;
+    height: 75vh;
+}
+
+.bottom-btn {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    bottom: 0;
+    position: fixed;
+}
+
+.left-btn,
+.right-btn {
+    width: 50%;
+    height: 100%;
+    background-color: #1d1d27;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-btn:hover {
+    background-color: #2f2f3f;
+}
+
+.left-btn:hover {
+    background-color: #2f2f3f;
+}
+
+.right-btn img:hover .right-btn {
+    background-color: #2f2f3f;
+}
+
+.left-btn img:hover .left-btn {
+    background-color: #2f2f3f;
+}
+
+.right-btn img,
+.left-btn img {
+    width: 100%;
+}
+
+.top-arr img,
+.bottom-arr img {
+    width: 14%;
+}
+
+.top-arr,
+.bottom-arr {
+    margin: 20px;
+}
+
+.left-arr img,
+.right-arr img {
+    width: 30%;
+}
+
+.center img {
+    width: 170%;
+}
+
+.center-ok {
+    display: flex;
+}
+
+.top-arr,
+.bottom-arr,
+.center,
+.left-arr,
+.right-arr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
