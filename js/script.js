@@ -14,44 +14,43 @@ $(document).ready(function() {
     $('.bottom-arr-img').click(function() {
         alert('You click on bottom button')
     });
+    /*$('.left-btn').mouseup(function() {
+        $(this).css({ backgroundColor: '#1d1d27' });
+    });*/
     $('.left-btn').mousedown(function() {
-        $('.left-btn').css({
-            backgroundColor: '#2f2f3f'
-        });
-    });
-    $('.right-btn').mousedown(function() {
-        $('.right-btn').css({
-            backgroundColor: '#2f2f3f'
-        });
+        alert("Handler for .mousedown() called.");
+        $(this).css({ backgroundColor: '#2f2f3f' });
     });
     $('.left-btn').mouseup(function() {
-        $('.left-btn').css({
-            backgroundColor: '#1d1d27'
-        });
+        alert("Handler for .mouseup() called.");
+        $(this).css({ backgroundColor: '#1d1d27' });
     });
-    $('.right-btn').mouseup(function() {
-        $('.right-btn').css({
-            backgroundColor: '#1d1d27'
-        });
-    });
-    $('.left-btn img').mousedown(function() {
-        $('.left-btn').css({
-            backgroundColor: '#2f2f3f'
-        });
-    });
-    $('.right-btn img').mousedown(function() {
-        $('.right-btn').css({
-            backgroundColor: '#2f2f3f'
-        });
-    });
-    $('.left-btn img').mouseup(function() {
-        $('.left-btn').css({
-            backgroundColor: '#2f2f3f'
-        });
-    });
-    $('.right-btn img').mouseup(function() {
-        $('.right-btn').css({
-            backgroundColor: '#2f2f3f'
-        });
-    });
+    $('.right-btn')
+        .mouseup(function() {
+            $(this).css({ backgroundColor: '#1d1d27' });
+
+        })
+        .mousedown(function() {
+            $(this).css({ backgroundColor: '#2f2f3f' });
+        })
+
+    /* $('.left-btn img')
+         .mousedown(function() {
+             $('.left-btn').css({ backgroundColor: '#2f2f3f' });
+
+         })
+         .mouseup(function() {
+             $(this).css({ backgroundColor: '#1d1d27' });
+         })*/
+    /*$('.right-btn img')
+        .mousedown(function() {
+            alert('down');
+            $('.right-btn').css('backgroundColor', '#2f2f3f');
+
+        })
+        .mouseup(function() {
+            alert('up');
+            $('.right-btn').css('backgroundColor', '#1d1d27');
+
+        });*/
 })
