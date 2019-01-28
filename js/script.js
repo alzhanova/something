@@ -16,7 +16,7 @@ $(document).ready(function() {
     $('.left-arr')
         .on('touchstart', function() {
             $('.left-arr svg path').css({ fill: '#ff1f52' });
-            $(this).vibrate();
+            $(this).vibrate('long');
         })
         .on('touchend', function() {
             $('.left-arr svg path').css({ fill: '#fff' });
@@ -24,7 +24,7 @@ $(document).ready(function() {
     $('.right-arr')
         .on('touchstart', function() {
             $('.right-arr svg path').css({ fill: '#ff1f52' });
-            $(this).vibrate();
+            $(this).vibrate('long');
         })
         .on('touchend', function() {
             $('.right-arr svg path').css({ fill: '#fff' });
@@ -32,7 +32,7 @@ $(document).ready(function() {
     $('.center')
         .on('touchstart', function() {
             $('.center svg path').css({ fill: '#ff1f52' });
-            $(this).vibrate();
+            $(this).vibrate('long');
         })
         .on('touchend', function() {
             $('.center svg path').css({ fill: '#fff' });
@@ -40,7 +40,7 @@ $(document).ready(function() {
     $('.bottom-arr')
         .on('touchstart', function() {
             $('.bottom-arr svg path').css({ fill: '#ff1f52' });
-            $(this).vibrate();
+            $(this).vibrate('long');
         })
         .on('touchend', function() {
             $('.bottom-arr svg path').css({ fill: '#fff' });
@@ -48,7 +48,7 @@ $(document).ready(function() {
     $('.top-arr')
         .on('touchstart', function() {
             $('.top-arr svg path').css({ fill: '#ff1f52' });
-            $(this).vibrate();
+            $(this).vibrate('long');
         })
         .on('touchend', function() {
             '.top-arr svg path'
