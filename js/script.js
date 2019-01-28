@@ -13,45 +13,40 @@ $(document).ready(function() {
         .on('touchend', function() {
             $(this).css({ backgroundColor: '#1d1d27' });
         })
-    $('.left-arr svg path')
+    $('.left-arr')
         .on('touchstart', function() {
-            $(this).css({ fill: '#ff1f52' });
+            $('.left-arr svg path').css({ fill: '#ff1f52' });
         })
         .on('touchend', function() {
-            $(this).css({ fill: '#fff' });
+            $('.left-arr svg path').css({ fill: '#fff' });
         })
-    $('.right-arr svg path')
+    $('.right-arr')
         .on('touchstart', function() {
-            $(this).css({ fill: '#ff1f52' });
+            $('.right-arr svg path').css({ fill: '#ff1f52' });
         })
         .on('touchend', function() {
-            $(this).css({ fill: '#fff' });
+            $('.right-arr svg path').css({ fill: '#fff' });
         })
-    $('.center svg path')
+    $('.center')
         .on('touchstart', function() {
-            $(this).css({ fill: '#ff1f52' });
-            $('.center svg path .cls-1').css({ fill: '#ff1f52' });
-            $('.center svg path .cls-2').css({ fill: '#ff1f52' });
-            $('.center svg path .cls-3').css({ fill: '#ff1f52' });
+            $('.center svg path').css({ fill: '#ff1f52' });
         })
         .on('touchend', function() {
-            $(this).css({ fill: '#fff' });
-            $('.center svg path .cls-1').css({ fill: '#fff' });
-            $('.center svg path .cls-2').css({ fill: '#fff' });
-            $('.center svg path .cls-3').css({ fill: '#fff' });
+            $('.center svg path').css({ fill: '#fff' });
         })
-    $('.bottom-arr svg path')
+    $('.bottom-arr')
         .on('touchstart', function() {
-            $(this).css({ fill: '#ff1f52' });
+            $('.bottom-arr svg path').css({ fill: '#ff1f52' });
         })
         .on('touchend', function() {
-            $(this).css({ fill: '#fff' });
+            $('.bottom-arr svg path').css({ fill: '#fff' });
         })
-    $('.top-arr svg path')
+    $('.top-arr')
         .on('touchstart', function() {
-            $(this).css({ fill: '#ff1f52' });
+            $('.top-arr svg path').css({ fill: '#ff1f52' });
         })
         .on('touchend', function() {
-            $(this).css({ fill: '#fff' });
+            '.top-arr svg path'
+            $('.top-arr svg path').css({ fill: '#fff' });
         })
 })
