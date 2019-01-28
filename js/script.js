@@ -14,22 +14,42 @@ $(document).ready(function() {
     $('.bottom-arr-img').click(function() {
         alert('You click on bottom button')
     });
-    $('.left-btn').click(function() {
+    $('.left-btn').mousedown(function() {
         $('.left-btn').css({
             backgroundColor: '#2f2f3f'
         });
     });
-    $('.right-btn').click(function() {
+    $('.right-btn').mousedown(function() {
         $('.right-btn').css({
             backgroundColor: '#2f2f3f'
         });
     });
-    $('.left-btn img').click(function() {
+    $('.left-btn').mouseup(function() {
+        $('.left-btn').css({
+            backgroundColor: '#1d1d27'
+        });
+    });
+    $('.right-btn').mouseup(function() {
+        $('.right-btn').css({
+            backgroundColor: '#1d1d27'
+        });
+    });
+    $('.left-btn img').mousedown(function() {
         $('.left-btn').css({
             backgroundColor: '#2f2f3f'
         });
     });
-    $('.right-btn img').click(function() {
+    $('.right-btn img').mousedown(function() {
+        $('.right-btn').css({
+            backgroundColor: '#2f2f3f'
+        });
+    });
+    $('.left-btn img').mouseup(function() {
+        $('.left-btn').css({
+            backgroundColor: '#2f2f3f'
+        });
+    });
+    $('.right-btn img').mouseup(function() {
         $('.right-btn').css({
             backgroundColor: '#2f2f3f'
         });
