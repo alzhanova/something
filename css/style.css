@@ -34,22 +34,6 @@
     align-items: center;
 }
 
-.right-btn:hover {
-    background-color: #2f2f3f;
-}
-
-.left-btn:hover {
-    background-color: #2f2f3f;
-}
-
-.right-btn img:hover .right-btn {
-    background-color: #2f2f3f;
-}
-
-.left-btn img:hover .left-btn {
-    background-color: #2f2f3f;
-}
-
 .right-btn img,
 .left-btn img {
     width: 100%;
