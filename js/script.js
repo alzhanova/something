@@ -1,56 +1,57 @@
 $(document).ready(function() {
-    $('.top-arr-img').click(function() {
-        alert('You click on top button')
-    });
-    $('.left-arr-img').click(function() {
-        alert('You click on left button')
-    });
-    $('.ok-img').click(function() {
-        alert('You click on ok button')
-    });
-    $('.right-arr-img').click(function() {
-        alert('You click on right button')
-    });
-    $('.bottom-arr-img').click(function() {
-        alert('You click on bottom button')
-    });
-    /*$('.left-btn').mouseup(function() {
-        $(this).css({ backgroundColor: '#1d1d27' });
-    });*/
-    $('.left-btn').mousedown(function() {
-        alert("Handler for .mousedown() called.");
-        $(this).css({ backgroundColor: '#2f2f3f' });
-    });
-    $('.left-btn').mouseup(function() {
-        alert("Handler for .mouseup() called.");
-        $(this).css({ backgroundColor: '#1d1d27' });
-    });
-    $('.right-btn')
-        .mouseup(function() {
-            $(this).css({ backgroundColor: '#1d1d27' });
-
-        })
-        .mousedown(function() {
+    $('.left-btn')
+        .on('touchstart', function() {
             $(this).css({ backgroundColor: '#2f2f3f' });
         })
-
-    /* $('.left-btn img')
-         .mousedown(function() {
-             $('.left-btn').css({ backgroundColor: '#2f2f3f' });
-
-         })
-         .mouseup(function() {
-             $(this).css({ backgroundColor: '#1d1d27' });
-         })*/
-    /*$('.right-btn img')
-        .mousedown(function() {
-            alert('down');
-            $('.right-btn').css('backgroundColor', '#2f2f3f');
-
+        .on('touchend', function() {
+            $(this).css({ backgroundColor: '#1d1d27' });
         })
-        .mouseup(function() {
-            alert('up');
-            $('.right-btn').css('backgroundColor', '#1d1d27');
-
-        });*/
+    $('.right-btn')
+        .on('touchstart', function() {
+            $(this).css({ backgroundColor: '#2f2f3f' });
+        })
+        .on('touchend', function() {
+            $(this).css({ backgroundColor: '#1d1d27' });
+        })
+    $('.left-arr svg path')
+        .on('touchstart', function() {
+            $(this).css({ fill: '#ff1f52' });
+        })
+        .on('touchend', function() {
+            $(this).css({ fill: '#fff' });
+        })
+    $('.right-arr svg path')
+        .on('touchstart', function() {
+            $(this).css({ fill: '#ff1f52' });
+        })
+        .on('touchend', function() {
+            $(this).css({ fill: '#fff' });
+        })
+    $('.center svg path')
+        .on('touchstart', function() {
+            $(this).css({ fill: '#ff1f52' });
+            $('.center svg path .cls-1').css({ fill: '#ff1f52' });
+            $('.center svg path .cls-2').css({ fill: '#ff1f52' });
+            $('.center svg path .cls-3').css({ fill: '#ff1f52' });
+        })
+        .on('touchend', function() {
+            $(this).css({ fill: '#fff' });
+            $('.center svg path .cls-1').css({ fill: '#fff' });
+            $('.center svg path .cls-2').css({ fill: '#fff' });
+            $('.center svg path .cls-3').css({ fill: '#fff' });
+        })
+    $('.bottom-arr svg path')
+        .on('touchstart', function() {
+            $(this).css({ fill: '#ff1f52' });
+        })
+        .on('touchend', function() {
+            $(this).css({ fill: '#fff' });
+        })
+    $('.top-arr svg path')
+        .on('touchstart', function() {
+            $(this).css({ fill: '#ff1f52' });
+        })
+        .on('touchend', function() {
+            $(this).css({ fill: '#fff' });
+        })
 })

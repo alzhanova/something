@@ -34,28 +34,28 @@
     align-items: center;
 }
 
-.right-btn img,
-.left-btn img {
-    width: 100%;
+.right-btn svg,
+.left-btn svg {
+    width: 20%;
 }
 
-.top-arr img,
-.bottom-arr img {
+.top-arr svg,
+.bottom-arr svg {
     width: 14%;
 }
 
 .top-arr,
 .bottom-arr {
-    margin: 20px;
+    margin: 40px;
 }
 
-.left-arr img,
-.right-arr img {
-    width: 30%;
+.left-arr svg,
+.right-arr svg {
+    width: 18%;
 }
 
-.center img {
-    width: 170%;
+.center svg {
+    width: 80%;
 }
 
 .center-ok {
@@ -83,4 +83,12 @@
     overflow: hidden;
     width: 100%;
     height: 75vh;
+}
+
+.top-arr svg path,
+.bottom-arr svg path,
+.center svg path,
+.left-arr svg path,
+.right-arr svg path {
+    fill: #fff;
 }
